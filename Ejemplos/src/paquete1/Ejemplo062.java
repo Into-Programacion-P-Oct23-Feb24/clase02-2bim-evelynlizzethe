@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo06 {
+public class Ejemplo062 {
 
     /**
      * @param args the command line arguments
@@ -30,9 +30,15 @@ public class Ejemplo06 {
         
             System.out.println("Ingrese un valor para el arreglo");
             dato = entrada.nextInt();
+            
+            if (dato < 5 || dato > 14 || dato == 10 || dato == 12) {
+                dato = 5; //asignar automaticamente el valor de 5
+            }
             // se asigna la variable dato a la posición del arreglo
             // de acuerdo al valor de i
             arreglo1[i] = dato;
+            
+        
             
         }
         
